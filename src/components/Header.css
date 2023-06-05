@@ -1,5 +1,5 @@
 .header {
-    height: 70px;
+    height: 80px;
     display: flex;
     align-items: center;
     background-color: #000000;
@@ -11,7 +11,7 @@
   
   
   .header__logo {
-    width: 100px;
+    width: 150px;
     object-fit: contain;
     margin: 0 20px;
   }
@@ -36,12 +36,10 @@
     background-color: #cd9042;
   }
   
-  .header__optionLineOne {
-    font-size: 10px;
-  }
+ 
   
   .header__optionLineTwo {
-    font-size: 13px;
+    font-size: 15px;
     font-weight: 800;
   }
   
@@ -65,7 +63,8 @@
   .header__nav_1 {
     display: flex;
     justify-content: space-evenly;
-    margin-left: 60%;
+    margin-left: 50%;
+    
     
 
   }
@@ -76,4 +75,5 @@
     margin-left: 10px;
     margin-right: 10px;
     color: white;
+
   }

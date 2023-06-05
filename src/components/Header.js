@@ -1,6 +1,5 @@
 import React from "react";
 import "./Header.css";
-import SearchIcon from "@material-ui/icons/Search";
 import ShoppingBasketIcon from "@material-ui/icons/ShoppingBasket";
 import { Link } from "react-router-dom";
 import { useStateValue } from "../StateProvider";
@@ -37,11 +36,11 @@ function Header() {
    
     <div className="header__nav">
       <div className="header__option">
-            <span className="header__optionLineTwo">Manufacturers</span>
+            <span className="header__optionLineTwo">MANUFACTURERS</span>
       </div>
 
       <div className="header__option">
-            <span className="header__optionLineTwo">Regions</span>
+            <span className="header__optionLineTwo">OPERATIONS</span>
       </div>
 
       <div className="header__option">
@@ -49,15 +48,15 @@ function Header() {
       </div>
 
       <div className="header__option">
-            <span className="header__optionLineTwo">Blog</span>
+            <span className="header__optionLineTwo">BLOG</span>
       </div>
+
     </div>
 
 
       <div className="header__nav_1">
         
           <div className="header__option">
-            <span className="header__optionLineOne">Hello Guest</span>
             <span className="header__optionLineTwo">Sign In</span>
           </div>
 

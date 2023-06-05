@@ -7,6 +7,7 @@ import Checkout from './components/Checkout'
 import Login from './components/Login'
 import { useStateValue } from "./StateProvider";
 import { auth } from "./firebase";
+import FactoryPage from './components/FactoryPage';
 
 function App() {
   const [{user}, dispatch] = useStateValue();
@@ -51,7 +52,9 @@ function App() {
           <Route path="/login">
             <Login />
           </Route>
-          {/* This is the default route */}
+          <Route path="/factorypage">
+            <FactoryPage />
+          </Route>
           <Route path="/">
             <Header />
             <Home />

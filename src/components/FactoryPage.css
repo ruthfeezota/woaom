@@ -1,0 +1,41 @@
+
+  .product-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 20px;
+    margin-top: 20px;
+  }
+  
+  .product-card {
+    background-color: #f2f2f2;
+    padding: 20px;
+    border-radius: 5px;
+  }
+  
+  .product-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 5px;
+  }
+  
+  .contact-form {
+    margin-top: 40px;
+  }
+  
+  .contact-form h2 {
+    margin-bottom: 10px;
+  }
+  
+  .contact-form input,
+  .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .contact-form button {
+    padding: 10px 20px;
+    background-color: #4caf50;
+    color: white
+  }
