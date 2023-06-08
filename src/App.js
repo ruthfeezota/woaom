@@ -1,54 +1,53 @@
 import React, { useEffect } from 'react';
 import './App.css';
-import {BrowserRouter as Router, Switch, Route} from "react-router-dom"
-import Header from './components/Header'
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import Header from './components/Header';
 import Home from './pages/Home';
-import Checkout from './components/Checkout'
-import Login from './components/Login'
-import { useStateValue } from "./StateProvider";
-import { auth } from "./firebase";
+import Checkout from './components/Checkout';
+import Login from './components/Login';
+import { useStateValue } from './StateProvider';
+import { auth } from './firebase';
 import FactoryPage from './components/FactoryPage';
 
-
 function App() {
-  const [{user}, dispatch] = useStateValue();
+  const [{ user }, dispatch] = useStateValue();
 
-  //useEffect <<<<<<< POWERFUL
-  //Piece of code which runs based on a given condition
+  /* useEffect <<<<<<< POWERFUL */
+  /* Piece of code which runs based on a given condition */
 
   useEffect(() => {
     const unsuscribe = auth.onAuthStateChanged((authUser) => {
       if (authUser) {
-        //the user is logged in.....
+        /* the user is logged in..... */
 
         dispatch({
-          type: "SET_USER",
+          type: 'SET_USER',
           user: authUser,
-        })
+        });
       } else {
-        //the user is logged out....
+        /* the user is logged out.... */
         dispatch({
-          type:"SET_USER",
+          type: 'SET_USER',
           user: null,
         });
       }
     });
 
     return () => {
-      //Any cleanup operations go in here....
+      /* Any cleanup operations go in here.... */
       unsuscribe();
     };
   }, []);
 
-  console.log("USER IS >>>> ",user);
+  console.log('USER IS >>>> ', user);
 
   return (
     <Router>
       <div className="app">
         <Switch>
           <Route path="/checkout">
-            <Header></Header>
-            <Checkout></Checkout>
+            <Header />
+            <Checkout />
           </Route>
           <Route path="/login">
             <Login />
@@ -61,7 +60,7 @@ function App() {
             <Home />
           </Route>
         </Switch>
-      </div>  
+      </div>
     </Router>
 
   );
