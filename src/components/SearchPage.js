@@ -2,12 +2,14 @@ import React, {useState} from "react";
 import './SearchPage.css';
 import data from "./TemplateData.json";
 import Footer from "./Footer";
+import Navbar from "./Navbar";
 
 
 function SearchPage() {
     const [searchTerm, setSearchTerm] = useState("");
     return (
       <>
+      <Navbar />
         <div className="searchContainer">
           <div className="searchInput_Container">
             <input id="searchInput" type="text" placeholder="Search by name or location..." onChange={(event) => {

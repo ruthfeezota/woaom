@@ -4,6 +4,7 @@ import { Link, useHistory} from "react-router-dom";
 import { auth } from "../firebase";
 import Footer from './Footer';
 
+
 function Login() {
 
     const history = useHistory();
@@ -16,7 +17,7 @@ function Login() {
         auth
             .signInWithEmailAndPassword(email,password)
             .then((auth) => {
-                history.push("/");
+                history.push("/SearchPage");
             })
             .catch((e) => alert(e.message));
     };
@@ -36,6 +37,7 @@ function Login() {
 
     return (
         <div className="login">
+
             <Link to="/">
                 <img
                     className="login__logo"
