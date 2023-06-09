@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import "./Login.css";
 import { Link, useHistory} from "react-router-dom";
 import { auth } from "../firebase";
+import Footer from './Footer';
 
 function Login() {
 
@@ -36,9 +37,9 @@ function Login() {
     return (
         <div className="login">
             <Link to="/">
-                <img 
+                <img
                     className="login__logo"
-                    src='https://i.ibb.co/P655TxT/Woaom-Logo-2.png' 
+                    src='https://i.ibb.co/P655TxT/Woaom-Logo-2.png'
                     alt=""
                 />
             </Link>
@@ -58,7 +59,12 @@ function Login() {
                 </p>
                 <button onClick={register} className="login__registerButton">Create your Woaom Account</button>
             </div>
+            <div className='footer'>
+            <Footer />
+            </div>
         </div>
+
+
     );
 }
 

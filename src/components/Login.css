@@ -1,5 +1,5 @@
 .login {
-  background-color: white;
+  background-color: black;
   height: 100vh;
   display:flex;
   flex-direction: column;
@@ -12,6 +12,7 @@
   flex-direction:column;
   padding:20px;
   border: 1px solid lightgray;
+  color: white;
 }
 
 .login__container > h1 {
@@ -60,4 +61,13 @@
   border: 1px solid;
   margin-top:10px;
   border-color: #a88734 #9c7e31 #846a29;
+}
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  color: white;
+  text-align: center;
 }
