@@ -1,0 +1,29 @@
+[
+    {
+        "id": 1,
+        "image": "https://i.ibb.co/Pwnc4Jm/5.png",
+        "title": "Happy Factory Candy & Cotton Candies",
+        "price": 335,
+        "location": "North Africa",
+        "industry": "Commodity",
+        "description": "We're committed to offering you the most convenient ways to connect with African Logistics."
+    },
+    {
+        "id": 2,
+        "image": "https://i.ibb.co/HKHp6Np/6.png",
+        "title": "Morgan Maxwell Dairy",
+        "price": 450,
+        "location": "South Africa",
+        "industry": "Commodity",
+        "description": "We're committed to offering you the most convenient ways to connect with African Logistics."
+    },
+    {
+        "id": 3,
+        "image": "https://i.ibb.co/zhggBgv/3.png",
+        "title": "Saleford & CO. Engineering",
+        "price": 200,
+        "location": "West Africa",
+        "industry": "Chemical",
+        "description": "We're committed to offering you the most convenient ways to connect with African Logistics."
+    }
+]

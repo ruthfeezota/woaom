@@ -29,7 +29,7 @@ function Login() {
             .createUserWithEmailAndPassword(email, password)
             .then (auth => {
                 //created a user and logged in redirect to homepage...
-                history.push("/");
+                history.push("/SearchPage");
             })
             .catch((e) => alert(e.message));
     };

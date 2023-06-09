@@ -8,6 +8,7 @@ import { useStateValue } from './StateProvider';
 import { auth } from './firebase';
 import FactoryPage from './components/FactoryPage';
 import Navbar from './components/Navbar';
+import SearchPage from './components/SearchPage';
 
 function App() {
   const [{ user }, dispatch] = useStateValue();
@@ -54,6 +55,9 @@ function App() {
           </Route>
           <Route path="/factorypage">
             <FactoryPage />
+          </Route>
+          <Route path="/SearchPage">
+            <SearchPage />
           </Route>
           <Route path="/">
             <Navbar />
