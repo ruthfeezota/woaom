@@ -26,14 +26,17 @@ body{
   box-shadow: 0px 10px 38px 0px rgba(0,0,0,0.1);
 
 
-
 }
 .searchContainer .search_Container{
     display: flex;
     align-items: center;
     justify-content: center;
     margin: 0 auto;
+
 }
+
+
+
 .searchContainer .search_Container .template{
     transform-style: preserve-3d;
     position: relative;
@@ -54,11 +57,26 @@ body{
     transition: all 0.1s ease;
     margin: 50px 15px
 }
+
+.searchContainer .search_Container .template:hover{
+    -webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+
+
+
 .searchContainer .search_Container .template img{
     height: 250px;
     position: relative;
     width: 90%;
     transition: all 0.5s ease;
+}
+
+.searchContainer .search_Container .template img:hover{
+    -webkit-transform: scale(1.3);
+	transform: scale(1.3);
 }
 
 .searchContainer .search_Container .template h3{
@@ -76,4 +94,9 @@ body{
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
       rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
       rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.searchContainer .search_Container .template ul:hover{
+    -webkit-transform: scale(1.3);
+	transform: scale(1.3);
 }
