@@ -1,90 +1,155 @@
-import React, { useEffect } from 'react';
-import { AiOutlineMenu } from 'react-icons/ai';
-import { FiShoppingCart } from 'react-icons/fi';
-import { BsChatLeft } from 'react-icons/bs';
-import { RiNotification3Line } from 'react-icons/ri';
-import { MdKeyboardArrowDown } from 'react-icons/md';
-import { TooltipComponent } from '@syncfusion/ej2-react-popups';
-
-import avatar from '../data/avatar.jpg';
-import { Cart, Chat, Notification, UserProfile } from '.';
-import { useStateContext } from '../contexts/ContextProvider';
-
-const NavButton = ({ title, customFunc, icon, color, dotColor }) => (
-  <TooltipComponent content={title} position="BottomCenter">
-    <button
-      type="button"
-      onClick={() => customFunc()}
-      style={{ color }}
-      className="relative text-xl rounded-full p-3 hover:bg-light-gray"
-    >
-      <span
-        style={{ background: dotColor }}
-        className="absolute inline-flex rounded-full h-2 w-2 right-2 top-2"
-      />
-      {icon}
-    </button>
-  </TooltipComponent>
-);
+/* eslint-disable jsx-a11y/anchor-is-valid */
+import React, { useState } from "react";
+import Logo from "../Assets/Logo.svg";
+import "./Navbar.css";
+import { BsCart2 } from "react-icons/bs";
+import { HiOutlineBars3 } from "react-icons/hi2";
+import Box from "@mui/material/Box";
+import Drawer from "@mui/material/Drawer";
+import List from "@mui/material/List";
+import Divider from "@mui/material/Divider";
+import ListItem from "@mui/material/ListItem";
+import ListItemButton from "@mui/material/ListItemButton";
+import ListItemIcon from "@mui/material/ListItemIcon";
+import ListItemText from "@mui/material/ListItemText";
+import HomeIcon from "@mui/icons-material/Home";
+import InfoIcon from "@mui/icons-material/Info";
+import CommentRoundedIcon from "@mui/icons-material/CommentRounded";
+import PhoneRoundedIcon from "@mui/icons-material/PhoneRounded";
+import ShoppingCartRoundedIcon from "@mui/icons-material/ShoppingCartRounded";
 
 const Navbar = () => {
-  const { currentColor, activeMenu, setActiveMenu, handleClick, isClicked, setScreenSize, screenSize } = useStateContext();
+  const [openMenu, setOpenMenu] = useState(false);
+  const menuOptions = [
+    {
+      text: "AfCFTA",
+      icon: <HomeIcon />,
+    },
+    {
+      text: "Manufacturers",
+      icon: <InfoIcon />,
+    },
+    {
+      text: "Our Work",
+      icon: <CommentRoundedIcon />,
+    },
+    {
+      text: "Contact",
+      icon: <PhoneRoundedIcon />,
+    },
 
-  useEffect(() => {
-    const handleResize = () => setScreenSize(window.innerWidth);
-
-    window.addEventListener('resize', handleResize);
-
-    handleResize();
-
-    return () => window.removeEventListener('resize', handleResize);
-  }, []);
-
-  useEffect(() => {
-    if (screenSize <= 900) {
-      setActiveMenu(false);
-    } else {
-      setActiveMenu(true);
-    }
-  }, [screenSize]);
-
-  const handleActiveMenu = () => setActiveMenu(!activeMenu);
-
+  ];
   return (
-    <div className="flex justify-between p-2 md:ml-6 md:mr-6 relative">
-
-      <NavButton title="Menu" customFunc={handleActiveMenu} color={currentColor} icon={<AiOutlineMenu />} />
-      <div className="flex">
-        <NavButton title="Cart" customFunc={() => handleClick('cart')} color={currentColor} icon={<FiShoppingCart />} />
-        <NavButton title="Chat" dotColor="#03C9D7" customFunc={() => handleClick('chat')} color={currentColor} icon={<BsChatLeft />} />
-        <NavButton title="Notification" dotColor="rgb(254, 201, 15)" customFunc={() => handleClick('notification')} color={currentColor} icon={<RiNotification3Line />} />
-        <TooltipComponent content="Profile" position="BottomCenter">
-          <div
-            className="flex items-center gap-2 cursor-pointer p-1 hover:bg-light-gray rounded-lg"
-            onClick={() => handleClick('userProfile')}
-          >
-            <img
-              className="rounded-full w-8 h-8"
-              src={avatar}
-              alt="user-profile"
-            />
-            <p>
-              <span className="text-gray-400 text-14">Hi,</span>{' '}
-              <span className="text-gray-400 font-bold ml-1 text-14">
-                Michael
-              </span>
-            </p>
-            <MdKeyboardArrowDown className="text-gray-400 text-14" />
-          </div>
-        </TooltipComponent>
-
-        {isClicked.cart && (<Cart />)}
-        {isClicked.chat && (<Chat />)}
-        {isClicked.notification && (<Notification />)}
-        {isClicked.userProfile && (<UserProfile />)}
+    <nav>
+      <div className="nav-logo-container">
+        <img src={Logo} alt="" />
       </div>
-    </div>
+      <div className="navbar-links-container">
+        <a href="">AfCFTA</a>
+        <a href="">Manufacturers</a>
+        <a href="">How It Works</a>
+        <a href="">Contact</a>
+        <a href="">
+          {/* <BsCart2 className="navbar-cart-icon" /> */}
+        </a>
+        <button className="primary-button">Request a Demo</button>
+      </div>
+      <div className="navbar-menu-container">
+        <HiOutlineBars3 onClick={() => setOpenMenu(true)} />
+      </div>
+      <Drawer open={openMenu} onClose={() => setOpenMenu(false)} anchor="right">
+        <Box
+          sx={{ width: 250 }}
+          role="presentation"
+          onClick={() => setOpenMenu(false)}
+          onKeyDown={() => setOpenMenu(false)}
+        >
+          <List>
+            {menuOptions.map((item) => (
+              <ListItem key={item.text} disablePadding>
+                <ListItemButton>
+                  <ListItemIcon>{item.icon}</ListItemIcon>
+                  <ListItemText primary={item.text} />
+                </ListItemButton>
+              </ListItem>
+            ))}
+          </List>
+          <Divider />
+        </Box>
+      </Drawer>
+    </nav>
   );
 };
 
 export default Navbar;
+{/* import React from 'react';
+import Container from 'react-bootstrap/Container';
+import Nav from 'react-bootstrap/Nav';
+import Navbar from 'react-bootstrap/Navbar';
+import Logo from '../GiocommerceLogo.png'
+import { Link } from 'react-router-dom'
+
+function newNavbar() {
+  return (
+    <>
+     <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
+        <Link to="/">
+        <img width="260px" height="auto" className="img-responsive" src={Logo}  alt="logo" />
+        </Link>
+          <button
+            className="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span className="navbar-toggler-icon"></span>
+          </button>
+          <div className="collapse navbar-collapse" id="navbarNav">
+            <ul className="navbar-nav ml-auto">
+              <li className="nav-item">
+                <a className="nav-link" href="#">Home</a>
+              </li>
+              <li className="nav-item">
+                <a className="nav-link" href="#">About</a>
+              </li>
+              <li className="nav-item">
+                <a className="nav-link" href="#">Services</a>
+              </li>
+              <li className="nav-item">
+                <a className="nav-link" href="#">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+
+
+   //*comment here
+      <Navbar bg="black" variant="dark" fixed="top" className='py-4 h5'>
+        <Container>
+        <Navbar.Brand >
+        <Link to="/">
+        <img width="260px" height="auto" className="img-responsive" src={Logo}  alt="logo" />
+        </Link>
+        </Navbar.Brand>
+          <Navbar.Brand href="/">HOME</Navbar.Brand>
+          <Nav className="me-auto">
+            <Nav.Link href="/">MANUFATURES</Nav.Link>
+            <Nav.Link href="/">REGIONS</Nav.Link>
+          </Nav>
+          <Nav>
+            <Nav.Link href="/Login" className="text-primary">SIGNIN</Nav.Link>
+          </Nav>
+        </Container>
+      </Navbar>
+    //
+    </>
+
+
+
+  );
+}
+
+export default newNavbar; */}

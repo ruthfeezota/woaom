@@ -1,5 +1,7 @@
 a {
     color: inherit;
+
+
 }
 .item1 {
     border: none;
@@ -10,27 +12,30 @@ a {
     display: flex;
     justify-content: left;
     align-items: center;
+    background: black;
 }
 .item1:hover {
     text-decoration: none;
     color: #48976a;
+
 }
 .item1:focus {
     outline: 0;
 }
 .item2 {
-    background: rgba(49, 49, 54, 0.993);
-    color: rgb(190, 190, 190);
-    margin: 1px;
+    background: black;
+    color: white;
     font-size: 15px;
     display: flex;
     justify-content: center;
     align-items: center;
+
+
 }
 
 .item3 {
     font-size: 20px;
-    background: #292a30;
+    background: black;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -41,7 +46,7 @@ a {
 }
 .item4 {
     font-size: 20px;
-    background: #25252b;
+    background: black;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -52,7 +57,7 @@ a {
 }
 .item5 {
     font-size: 20px;
-    background: #202025;
+    background: black;
     display: flex;
     justify-content: center;
     align-items: center;

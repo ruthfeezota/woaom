@@ -12,7 +12,7 @@ function Home() {
           src="https://i.ibb.co/3C2Shvs/home-Page-Cover-1.png"
           alt=""
         />
-       
+
         <div className="home__row">
           <Factory
             id="12321341"
@@ -20,11 +20,18 @@ function Home() {
             rating={5}
             image="https://i.ibb.co/PTQTLfY/7.png"
           />
+
           <Factory
             id="49538094"
             title="Morgan Maxwell"
             rating={4}
             image="https://i.ibb.co/HKHp6Np/6.png"
+          />
+          <Factory
+            id="3254354345"
+            title="Salford @ CO Engineering"
+            rating={4}
+            image="https://i.ibb.co/zhggBgv/3.png"
           />
         </div>
 
@@ -51,7 +58,7 @@ function Home() {
         </div>
         <Footer/>
 
-        
+
       </div>
     </div>
     );
