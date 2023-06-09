@@ -17,11 +17,9 @@ function Factory({ id, title, image, price, rating }) {
       },
     });
   };
- 
+
   return (
     <div className="factory">
-      
-
       <img src={image} alt="" />
       <div className="factory__info">
         <p>{title}</p>
