@@ -32,6 +32,7 @@
     "react-bootstrap": "^2.7.4",
     "react-currency-format": "^1.1.0",
     "react-dom": "^18.2.0",
+    "react-google-login": "^5.2.2",
     "react-icons": "^4.9.0",
     "react-modal": "^3.16.1",
     "react-pro-sidebar": "^1.1.0-alpha.1",
@@ -67,6 +68,7 @@
     ]
   },
   "devDependencies": {
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
     "eslint": "^8.42.0",
     "eslint-config-airbnb": "^19.0.4",
     "eslint-config-airbnb-base": "^15.0.0",

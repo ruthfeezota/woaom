@@ -10,6 +10,7 @@ import FactoryPage from './components/FactoryPage';
 import Navbar from './components/Navbar';
 import SearchPage from './components/SearchPage';
 
+
 function App() {
   const [{ user }, dispatch] = useStateValue();
 
@@ -46,6 +47,10 @@ function App() {
     <Router>
       <div className="app">
         <Switch>
+        <Route path="/">
+            <Navbar />
+            <Home />
+          </Route>
           <Route path="/checkout">
             <Navbar />
             <Checkout />
@@ -56,12 +61,8 @@ function App() {
           <Route path="/factorypage">
             <FactoryPage />
           </Route>
-          <Route path="/SearchPage">
+          <Route path="/searchpage">
             <SearchPage />
-          </Route>
-          <Route path="/">
-            <Navbar />
-            <Home />
           </Route>
         </Switch>
       </div>

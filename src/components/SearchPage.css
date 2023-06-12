@@ -1,17 +1,20 @@
-body{
+body {
     background-color: rgb(209,204,204);
 }
-.searchContainer{
+
+.searchContainer {
     margin: 5% 0;
 }
-.searchContainer > .searchInput_Container{
+
+.searchContainer > .searchInput_Container {
     display: flex;
     align-items: center;
     justify-content: center;
     margin: 0 auto;
 
 }
-.searchContainer > .searchInput_Container input{
+
+.searchContainer > .searchInput_Container input {
 
   padding-left: 25px;
   display: flex;
@@ -25,9 +28,9 @@ body{
   -moz-box-shadow: 0px 10px 38px 0px rgba(0,0,0,0.1);
   box-shadow: 0px 10px 38px 0px rgba(0,0,0,0.1);
 
-
 }
-.searchContainer .search_Container{
+
+.searchContainer .search_Container {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -35,9 +38,7 @@ body{
 
 }
 
-
-
-.searchContainer .search_Container .template{
+.searchContainer .search_Container .template {
     transform-style: preserve-3d;
     position: relative;
     padding: 25px;
@@ -58,33 +59,31 @@ body{
     margin: 50px 15px
 }
 
-.searchContainer .search_Container .template:hover{
+.searchContainer .search_Container .template:hover {
     -webkit-transform: scale(1);
 	transform: scale(1);
 	-webkit-transition: .3s ease-in-out;
 	transition: .3s ease-in-out;
 }
 
-
-
-.searchContainer .search_Container .template img{
+.searchContainer .search_Container .template img {
     height: 250px;
     position: relative;
     width: 90%;
     transition: all 0.5s ease;
 }
 
-.searchContainer .search_Container .template img:hover{
+.searchContainer .search_Container .template img:hover {
     -webkit-transform: scale(1.3);
 	transform: scale(1.3);
 }
 
-.searchContainer .search_Container .template h3{
+.searchContainer .search_Container .template h3 {
     width: 100%;
     color: rgb(220, 220, 220);
 }
 
-.searchContainer .search_Container .template ul{
+.searchContainer .search_Container .template ul {
     list-style: none;
     cursor: pointer;
     font-weight: bold;
@@ -96,7 +95,7 @@ body{
       rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 
-.searchContainer .search_Container .template ul:hover{
+.searchContainer .search_Container .template ul:hover {
     -webkit-transform: scale(1.3);
 	transform: scale(1.3);
 }

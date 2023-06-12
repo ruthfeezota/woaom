@@ -1,5 +1,5 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
-import React, { useState } from "react";
+import React, { useState, useContext } from "react";
 import Logo from "../Assets/Logo.png";
 import "./Navbar.css";
 import { HiOutlineBars3 } from "react-icons/hi2";
@@ -17,8 +17,11 @@ import CommentRoundedIcon from "@mui/icons-material/CommentRounded";
 import PhoneRoundedIcon from "@mui/icons-material/PhoneRounded";
 import Authentication from "./Authentication";
 
+
+
 const Navbar = () => {
   const [openMenu, setOpenMenu] = useState(false);
+
   const menuOptions = [
     {
       text: "AfCFTA",
@@ -38,6 +41,9 @@ const Navbar = () => {
     },
 
   ];
+
+
+
   return (
     <nav>
       <div className="nav-logo-container">
@@ -72,7 +78,7 @@ const Navbar = () => {
                   <ListItemText primary={item.text} />
                 </ListItemButton>
               </ListItem>
-            ))}
+            ))},
           </List>
           <Divider />
         </Box>
