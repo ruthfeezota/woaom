@@ -90,14 +90,12 @@
   }
   .primary-heading {
     font-size: clamp(2rem, 4vw, 4rem);
-    color: #4c4c4c;
     /* line-height: 5rem; */
     max-width: 600px;
   }
   .primary-text {
     font-size: clamp(1rem, 3vw, 1.3rem);
     max-width: 500px;
-    color: #6a6a6a;
     margin: 1.5rem 0rem;
   }
   .secondary-button {
