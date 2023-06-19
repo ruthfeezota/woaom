@@ -2,13 +2,10 @@ import React, { useEffect } from 'react';
 import './App.css';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Home from './pages/Home';
-import Checkout from './components/Checkout';
-import Login from './components/Login';
 import { useStateValue } from './StateProvider';
 import { auth } from './firebase';
-import FactoryPage from './components/FactoryPage';
 import Navbar from './components/Navbar';
-import SearchPage from './components/SearchPage';
+import Login from './components/Login'
 
 
 function App() {
@@ -47,27 +44,20 @@ function App() {
     <Router>
       <div className="app">
         <Switch>
-        <Route path="/">
+          <Route path='/checkout'>
             <Navbar />
-            <Home />
           </Route>
-          <Route path="/checkout">
-            <Navbar />
-            <Checkout />
-          </Route>
-          <Route path="/login">
+          <Route path='/login'>
             <Login />
           </Route>
-          <Route path="/factorypage">
-            <FactoryPage />
-          </Route>
-          <Route path="/searchpage">
-            <SearchPage />
+          {/* This is the default route */}
+          <Route path='/'>
+            <Navbar />
+            <Home /> 
           </Route>
         </Switch>
       </div>
     </Router>
-
   );
 }
 

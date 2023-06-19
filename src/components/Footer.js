@@ -21,12 +21,15 @@ const Footer = () => {
       </div>
       <div className="footer-section-two">
         <div className="footer-section-columns">
+          <span>Our Tech Stacks</span>
+          <span>Request a Demo</span>
+        </div>
+        <div className="footer-section-columns">
+          <span>sales@woaom.com</span>
           <span>Investing in Africa</span>
         </div>
         <div className="footer-section-columns">
           <span>Terms & Conditions</span>
-        </div>
-        <div className="footer-section-columns">
           <span>Privacy Policy</span>
         </div>
       </div>
