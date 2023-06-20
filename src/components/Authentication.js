@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { auth } from "../firebase";
+import { auth } from "../firebase/firebase";
 import { onAuthStateChanged, signOut } from "firebase/auth";
 import { Link } from "react-router-dom";
 
@@ -25,21 +25,25 @@ const Authentication = () => {
         }
 
     return (
-        <>
-        { authenticatedUser === null ?
-        <>
+      <>
+        {authenticatedUser === null ? (
+          <>
             <Link to="/Login">
-            <button className="primary-button">Login</button>
+              <button className="primary-button">Login</button>
             </Link>
-        </>:
-            <>
-            <Link to="/" >
-               <button className="primary-button" onClick={userSignOut}>Sign Out</button>
+          </>
+        ) : (
+          <>
+            <Link to="/">
+              <button className="primary-button" onClick={userSignOut}>
+                Sign Out
+              </button>
             </Link>
-        </>
-}
-</>
+          </>
+        )}
+      </>
     );
+   
 }
 
 export default Authentication;

@@ -3,9 +3,11 @@ import './App.css';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Home from './pages/Home';
 import { useStateValue } from './StateProvider';
-import { auth } from './firebase';
+import { auth } from './firebase/firebase';
 import Navbar from './components/Navbar';
 import Login from './components/Login'
+import Footer from './components/Footer';
+import Profile from './components/user/Profile';
 
 
 function App() {
@@ -50,11 +52,17 @@ function App() {
           <Route path='/login'>
             <Login />
           </Route>
+          <Route path='/profile'>
+            <Navbar />
+            <Profile />
+            <Footer />
+          </Route>
           {/* This is the default route */}
           <Route path='/'>
             <Navbar />
             <Home /> 
           </Route>
+
         </Switch>
       </div>
     </Router>
