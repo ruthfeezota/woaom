@@ -10,17 +10,17 @@ const Work = () => {
   const workInfoData = [
     {
       image: PickMeals,
-      title: "Supplier Discovery",
+      title: "Salford & CO Engineering",
       text: "Tell us your requirements, hit search and explore a list of new suppliers in just a few minutes",
     },
     {
       image: ChooseMeals,
-      title: "Reporting",
+      title: "Morgan Maxwell",
       text: "Actionable and informative insights on your RFx processes - enabling you yo make informed decisions",
     },
     {
       image: Contracts,
-      title: "Contracts",
+      title: "Happy Factory Candy & Cotton Candies",
       text: "Create contracts from your awarded RFPs and experience efficient and auditable source to contract processes",
     },
 
@@ -28,9 +28,9 @@ const Work = () => {
   return (
     <div className="work-section-wrapper" id="work">
       <div className="work-section-top">
-        <h1 className="primary-heading">Our Products</h1>
+        <h1 className="primary-heading"> Driving growth and innovation in Africa</h1>
         <p className="primary-text">
-        We pack our procurement platform with all of the core features you need to save time, reduce your spend and transact with confidence
+        Explore how Salford & CO Engineering, Morgan Maxwell, and Happy Factory orchestrates and delivers supplies that go beyond industry bonds by intergating people, processes and systems in the cloud.
         </p>
       </div>
       <div className="work-section-bottom">

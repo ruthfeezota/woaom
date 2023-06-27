@@ -1,26 +1,34 @@
 import React from "react";
 import "../App.css"
 import "../components/Work"
-import Footer from '../components/Footer'
-import Work from "../components/Work";
+import { Carousel } from 'react-responsive-carousel';
+import 'react-responsive-carousel/lib/styles/carousel.min.css';
+
 
 function Home() {
   return (
-    <div className="home">
-      <div className="home__container">
-        <img
-          className="home__image"
-          src="https://i.ibb.co/3C2Shvs/home-Page-Cover-1.png"
-          alt=""
-        />
-       <Work/>
-
-        <Footer/>
-
-
+<Carousel autoPlay interval="5000" 
+                 transitionTime="5000" showThumbs={false}>
+      <div>
+        <img src="https://i.ibb.co/3C2Shvs/home-Page-Cover-1.png" />
+       
       </div>
-    </div>
+      <div>
+        <img src="https://i.ibb.co/3C2Shvs/home-Page-Cover-1.png" />
+        
+      </div>
+      <div>
+        <img src="https://i.ibb.co/3C2Shvs/home-Page-Cover-1.png" />
+      </div>
+  
+    </Carousel>
+    
+
     );
+  
 };
+
+
+
 
 export default Home;

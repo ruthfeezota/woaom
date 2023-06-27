@@ -8,6 +8,7 @@ import Navbar from './components/Navbar';
 import Login from './components/Login'
 import Footer from './components/Footer';
 import Profile from './components/user/Profile';
+import Work from './components/Work';
 
 
 function App() {
@@ -61,6 +62,8 @@ function App() {
           <Route path='/'>
             <Navbar />
             <Home /> 
+            <Work/>
+            <Footer/>
           </Route>
 
         </Switch>
