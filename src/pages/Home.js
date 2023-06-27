@@ -6,19 +6,32 @@ import 'react-responsive-carousel/lib/styles/carousel.min.css';
 
 
 function Home() {
-  return (
+  return(
 <Carousel autoPlay interval="5000" 
-                 transitionTime="5000" showThumbs={false}>
+                 transitionTime="5000" showThumbs={false} showStatus={false}>
       <div>
         <img src="https://i.ibb.co/3C2Shvs/home-Page-Cover-1.png" />
-       
-      </div>
-      <div>
-        <img src="https://i.ibb.co/3C2Shvs/home-Page-Cover-1.png" />
+        <h1 className="primary-heading">Enter Interface</h1>
+        <button className="outline-home-button">
+                User Interface
+              </button>
         
       </div>
       <div>
         <img src="https://i.ibb.co/3C2Shvs/home-Page-Cover-1.png" />
+        <h1 className="primary-heading">Enter Interface</h1>
+        <button className="outline-home-button">
+
+                User Interface
+              </button>
+        
+      </div>
+      <div>
+        <img src="https://i.ibb.co/3C2Shvs/home-Page-Cover-1.png" />
+        <h1 className="primary-heading">Enter Interface</h1>
+        <button className="outline-home-button">
+                User Interface
+              </button>
       </div>
   
     </Carousel>
