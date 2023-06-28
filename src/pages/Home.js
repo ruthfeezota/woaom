@@ -13,7 +13,10 @@ function Home() {
         <img src="https://i.ibb.co/3C2Shvs/home-Page-Cover-1.png" />
         <h1 className="primary-heading">Enter Interface</h1>
         <button className="outline-home-button">
-                User Interface
+                USERS
+              </button>
+              <button className="outline-home-button">
+                MANUFACTURER
               </button>
         
       </div>

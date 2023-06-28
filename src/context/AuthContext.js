@@ -17,6 +17,7 @@ import {
   export const useAuth = () => {
     return useContext(authContext);
   };
+
   
   const AuthContext = ({ children }) => {
     const [currentUser, setCurrentUser] = useState(null);

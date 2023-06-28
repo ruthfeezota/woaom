@@ -47,8 +47,8 @@ function SearchPage() {
                   )
                 })
             }
-            <Footer/>
           </div>
+          <Footer/>
         </div>
       </>
     )

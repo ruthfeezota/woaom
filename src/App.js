@@ -9,6 +9,8 @@ import Login from './components/Login'
 import Footer from './components/Footer';
 import Profile from './components/user/Profile';
 import Work from './components/Work';
+import SearchPage from './components/SearchPage';
+
 
 
 function App() {
@@ -43,6 +45,7 @@ function App() {
 
   console.log('USER IS >>>> ', user);
 
+
   return (
     <Router>
       <div className="app">
@@ -58,6 +61,10 @@ function App() {
             <Profile />
             <Footer />
           </Route>
+          <Route path='/searchpage'>
+            <SearchPage/>
+
+          </Route>
           {/* This is the default route */}
           <Route path='/'>
             <Navbar />
@@ -65,6 +72,8 @@ function App() {
             <Work/>
             <Footer/>
           </Route>
+
+
 
         </Switch>
       </div>
