@@ -32,7 +32,7 @@ function SearchPage() {
                 .map((val) => {
                   return(
                     <div className="template" key={val.id}>
-                        <img src={val.image} alt="" />
+                        <img src={val.image} alt="" /> 
                         <h3>{val.title}</h3>
                         <p className="description">We're committed to offering you the most convenient ways to connect with African Logistics.</p>
                         <ul className="location" >

@@ -3,6 +3,9 @@ import "./Login.css";
 import { Link, useHistory} from "react-router-dom";
 import { auth } from "../firebase/firebase";
 import Footer from './Footer';
+import GoogleLogin from './LoginGoogle';
+
+
 
 
 function Login() {
@@ -10,6 +13,7 @@ function Login() {
     const history = useHistory();
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
+    
 
     const login = (event) => {
         event.preventDefault(); //Stop the refresh!
@@ -35,6 +39,7 @@ function Login() {
             .catch((e) => alert(e.message));
     };
 
+   
     return (
         <div className="login">
 
@@ -53,12 +58,15 @@ function Login() {
                     <h5>Password</h5>
                     <input value={password} onChange={event => setPassword(event.target.value)} type="password"/>
                     <button onClick={login} type="submit" className="login__signInButton">Sign In</button>
+                    <GoogleLogin/>
                 </form>
 
                 <p>
                 By signing-in you agree to the Woaom Conditions of Use & Sale. Please
                     see our Privacy Notice, our Cookies Notice and our Interest-Based Ads Notice.
                 </p>
+                <GoogleLogin/>
+                
                 <button onClick={register} className="login__registerButton">Create your Woaom Account</button>
             </div>
             <div className='footer'>

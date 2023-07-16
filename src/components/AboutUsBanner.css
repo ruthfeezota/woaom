@@ -1,0 +1,24 @@
+.banner-aboutus {
+    background-image: url('../Assets/Img/photo90.png');
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding: 50px 0;
+    top: 60px;
+    height: 270px;
+    margin-top:1px;
+  
+  }
+  
+  .banner-aboutus h1 {
+    color: white;
+    font-size: 36px;
+  }
+  
+  .banner-aboutus .line {
+    border: none;
+    border-top: 2px solid #e48f0f;
+    width: 20%;
+    margin: 20px auto;
+  }
+  

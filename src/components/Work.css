@@ -301,8 +301,9 @@ nav {
 .testimonial-section-bottom h2 {
   margin-top: 1.5rem;
 }
-.work-section-wrapper {
-  margin-top: 15rem;
+.work-section-wrapper-work {
+  margin-top: 2rem;
+  text-align: center;
 }
 .work-section-top p {
   text-align: center;
@@ -474,8 +475,8 @@ nav {
   .about-section-image-container {
     margin-right: 0rem !important;
   }
-  .work-section-wrapper {
-    margin-top: 5rem !important;
+  .work-section-wrapper-work {
+    margin-top: 2rem !important;
   }
   .work-section-bottom {
     margin-top: 1rem !important;

@@ -7,9 +7,13 @@ import { auth } from './firebase/firebase';
 import Navbar from './components/Navbar';
 import Login from './components/Login'
 import Footer from './components/Footer';
-import Profile from './components/user/Profile';
 import Work from './components/Work';
 import SearchPage from './components/SearchPage';
+import ChatRoom from './pages/ChatRoom';
+import AboutUsBanner from './components/AboutUsBanner';
+
+import LoginGoogle from './components/LoginGoogle';
+import Profile from './components/Profile';
 
 
 
@@ -56,22 +60,35 @@ function App() {
           <Route path='/login'>
             <Login />
           </Route>
+
           <Route path='/profile'>
-            <Navbar />
-            <Profile />
+          <Navbar />
+            <Profile/>
             <Footer />
           </Route>
+
+          <Route path='/google'>
+            <LoginGoogle/>
+          </Route>
+
           <Route path='/searchpage'>
             <SearchPage/>
-
           </Route>
+
+          <Route path='/chat'>
+            <ChatRoom/>
+          </Route>
+
+
           {/* This is the default route */}
           <Route path='/'>
             <Navbar />
             <Home /> 
+            <AboutUsBanner/>
             <Work/>
             <Footer/>
           </Route>
+          
 
 
 

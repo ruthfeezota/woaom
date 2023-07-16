@@ -2,12 +2,12 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Reem Kufi", sans-serif !important;
+  font-family: 'Bebas Neue', sans-serif;
 
 }
 
 body,div {
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Bebas Neue', sans-serif;
 }
 
 .App {
