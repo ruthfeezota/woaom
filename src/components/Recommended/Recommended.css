@@ -1,0 +1,54 @@
+.recommended-flex {
+  display: flex;
+  margin-left: 20rem;
+  
+}
+.recommended{
+  color: white;
+  position: relative;
+ 
+}
+
+.recommended-flex Button {
+  margin-left: 10px;
+  padding: 0.5rem 2rem;
+  background-color: #fe9e0d;
+  outline: none;
+  border: none;
+  border-radius: 5rem;
+  font-size: 0.8rem;
+  cursor: pointer;
+  font-weight: 600;
+  color: white;
+  transition: 0.2s;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+.recommended-title {
+  margin-left: 20rem;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  font-size: 20px;
+  color: white;
+}
+
+@media (max-width: 800px) {
+  .recommended-flex Button {
+    margin-left: 10px;
+    padding: 0.3rem 1.0rem;
+    background-color: #fe9e0d;
+    outline: none;
+    border: none;
+    border-radius: 5rem;
+    font-size: 0.8rem;
+    cursor: pointer;
+    font-weight: 500;
+    color: white;
+    transition: 0.2s;
+    align-items: center;
+    justify-content: center;
+    display:grid;
+  }
+}

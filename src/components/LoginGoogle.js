@@ -2,6 +2,7 @@ import { React, useEffect, useState } from 'react';
 import jwt_decode from 'jwt-decode'
 import './Login.css'
 
+
 function LoginGoogle() {
     const [user, setUser ] = useState({});
 
@@ -12,6 +13,7 @@ function LoginGoogle() {
     setUser(userObject);
     document.getElementById("signInDiv").hidden = true;
   }
+
 
 function handleSignOut (e) {
     setUser({});
@@ -43,7 +45,9 @@ function handleSignOut (e) {
    <div className="signInDiv">
    <div id="signInDiv"></div>
    { Object.keys(user).length != 0 &&
-   <button onClick={(e) => handleSignOut(e)}>Sign Out</button>
+   
+   <button onClick={(e) => handleSignOut(e)} >Sign Out</button>
+
 }
    { user && 
    <div>

@@ -1,4 +1,14 @@
 [
+    
+    {
+        "id": 3,
+        "image": "https://i.ibb.co/hgNZ3HF/brandname.png",
+        "title": "Namebrand Shoes",
+        "price": 200,
+        "location": "West Africa",
+        "industry": "Textiles",
+        "description": "We're committed to offering you the most convenient ways to connect with African Logistics."
+    },
     {
         "id": 1,
         "image": "https://i.ibb.co/Pwnc4Jm/5.png",

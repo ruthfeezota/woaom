@@ -8,11 +8,13 @@
   body,
   #root,
   .app,
+
   .content {
     height: 100%;
     width: 100%;
     font-family: 'Bebas Neue', sans-serif;
     background-color: black;
+    color: white;
   }
 
 
@@ -55,4 +57,12 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+.content {
+  height: 100%;
+  width: 100%;
+  font-family: 'Bebas Neue', sans-serif;
+  background-color: black;
+  color: white;
 }

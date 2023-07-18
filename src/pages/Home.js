@@ -11,7 +11,7 @@ function Home() {
 <Carousel autoPlay interval="5000" 
                  transitionTime="5000" showThumbs={false} showStatus={false} >
       <div>
-        <img src="https://i.ibb.co/3C2Shvs/home-Page-Cover-1.png" />
+        <img src="https://i.ibb.co/3C2Shvs/home-Page-Cover-1.png" alt="phot"/>
         <h1 className="primary-heading-banner">ENTER INTERFACE</h1>
         <button className="outline-home-button-banner">
                 USERS
@@ -24,7 +24,7 @@ function Home() {
         
       </div>
       <div>
-        <img src="https://i.ibb.co/k2tmbFy/photo6.jpg" />
+        <img src="https://i.ibb.co/k2tmbFy/photo6.jpg" alt="phot" />
         <h1 className="primary-heading-banner">Enter Interface</h1>
         <button className="outline-home-button-banner">
                 User Interface

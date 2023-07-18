@@ -47,8 +47,9 @@ function Profile() {
    <div>
     <img src={user.picture}></img>
     <h3 className='user-name'>{user.name}</h3>
+    <p>{user.email}</p>
     
-    </div>}
+    </div>
    </div>
 
   );
