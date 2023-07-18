@@ -10,12 +10,15 @@ function SearchPage() {
     return (
       <>
       <Navbar />
+      <a href="/brandname">
         <div className="searchContainer">
           <div className="searchInput_Container">
             <input id="searchInput" type="text" placeholder="Search by name or location..." onChange={(event) => {
               setSearchTerm(event.target.value);
             }} />
+            <a href="/products">
             <button className="forth-button">Search By Products</button>
+            </a>
           </div>
           <div className="search_Container">
             {
@@ -51,6 +54,7 @@ function SearchPage() {
           </div>
           <Footer/>
         </div>
+        </a>
       </>
     )
   }

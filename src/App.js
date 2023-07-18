@@ -13,7 +13,6 @@ import ChatRoom from './pages/ChatRoom';
 import AboutUsBanner from './components/AboutUsBanner';
 import LoginGoogle from './components/LoginGoogle';
 import Profile from './components/Profile';
-
 import Navigation from "./components/Navigation/Nav";
 import Products from "./components/Products/Products";
 import products from "./components/db/data";
@@ -21,6 +20,7 @@ import Recommended from "./components/Recommended/Recommended";
 import Sidebar from "./components/Sidebar/Sidebar";
 import Card from "./components/Card";
 import "./index.css";
+import BrandName from './pages/Factory/BrandName';
 
 
 
@@ -153,6 +153,11 @@ function App() {
 
           <Route path='/searchpage'>
             <SearchPage/>
+          </Route>
+
+
+          <Route path='/brandname'>
+            <BrandName/>
           </Route>
 
           <Route path='/chat'>

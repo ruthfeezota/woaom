@@ -2,6 +2,7 @@ body {
     background-color: rgb(209,204,204);
 }
 
+
 .searchContainer {
     margin: 5% 0;
 }
@@ -12,6 +13,25 @@ body {
     justify-content: center;
     margin: 0 auto;
     flex-direction: column;
+    
+
+}
+
+.searchContainer > .searchInput_Container button {
+    margin-top: 10px;
+    padding: 1rem 2rem;
+    background-color: #fe9e0d;
+    outline: none;
+    border: none;
+    border-radius: 5rem;
+    font-size: 0.8rem;
+    cursor: pointer;
+    font-weight: 600;
+    color: white;
+    transition: 0.2s;
+    align-items: center;
+    justify-content: center;
+    
 
 }
 
@@ -28,6 +48,7 @@ body {
   -webkit-box-shadow: 0px 10px 38px 0px rgba(0,0,0,0.1);
   -moz-box-shadow: 0px 10px 38px 0px rgba(0,0,0,0.1);
   box-shadow: 0px 10px 38px 0px rgba(0,0,0,0.1);
+  
 
 }
 
@@ -38,6 +59,7 @@ body {
     margin: 0 auto;
     margin-top: 2rem;
     text-align: center;
+    
 
 }
 
@@ -57,6 +79,7 @@ body {
 }
 .searchContainer .search_Container .template h3 {
     margin: 1rem 0rem;
+    
   
 }
 
@@ -75,7 +98,8 @@ body {
 
 .searchContainer .search_Container .template img {
   max-width: 100%;
-  height: auto;
+
+  
 }
 
 .searchContainer .search_Container .template img:hover {
@@ -88,6 +112,8 @@ body {
 .searchContainer .search_Container .template h3 {
     width: 100%;
     color:#fe9e0d;
+   
+    
 }
 
 .searchContainer .search_Container .template ul {
@@ -115,10 +141,28 @@ body {
 
 
 
+
+
 @media (max-width: 800px) {
     .searchContainer .search_Container .template h3 {
-            text-align: center;
-    max-width: 90%;
+    text-align: center;
+    max-width: 300px;
+
+    }
+
+    .searchContainer .search_Container .template {
+        width: 390px;
+        min-height: 350px;
+        background-color: white;
+        padding: 1rem 2rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        border-radius: 1rem;
+        margin: 1rem 2rem;
+      
     }
     .work-section-wrapper-work {
         margin-top: 2rem !important;
