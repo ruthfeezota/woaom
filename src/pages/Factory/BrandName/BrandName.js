@@ -1,8 +1,9 @@
 import React from 'react';
-import Navbar from '../../components/Navbar';
+import Navbar from '../../../components/Navbar';
 import './BrandName.css'
 import BrandNew from '../../Assets/Img/shoes.jpg'
-import FactoryContact from '../../components/Contact/FactoryContact';
+import FactoryContact from '../../../components/Contact/FactoryContact';
+import Footer from '../../../components/Footer';
 
 
 
@@ -22,7 +23,7 @@ function BrandName() {
         <h2 className="banner-p">African Street Wear</h2>
         <div className="button-container">
             <a href='/products'>
-          <button className="banner-button">Our Products</button>
+          <button className="banner-button">View All Products</button>
           </a>
           {/* <button className="banner-button">Contact Us</button> */}
         </div>
@@ -35,6 +36,7 @@ function BrandName() {
     </div>
     
     <FactoryContact />
+    <Footer/>
     </>
   )
 }

@@ -47,14 +47,14 @@ const Navbar = () => {
   return (
     <nav>
       <div className="nav-logo-container">
-        <img src={Logo} alt="" />
+        <img src={Logo} alt="Woaom's Logo" />
       </div>
       <div className="navbar-links-container">
-        <a href="">AfCFTA</a>
-        <a href="">Manufacturers</a>
-        <a href="">How It Works</a>
-        <a href="">Contact</a>
-        <a href="">
+        <a href="/">AfCFTA</a>
+        <a href="/">Manufacturers</a>
+        <a href="/">How It Works</a>
+        <a href="/">Contact</a>
+        <a href="/">
           {/* <BsCart2 className="navbar-cart-icon" /> */}
         </a>
         <Authentication />

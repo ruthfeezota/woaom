@@ -28,7 +28,7 @@ const Work = () => {
   return (
     <div className="work-section-wrapper-work" id="work">
       <div className="work-section-top">
-        <h1 className="primary-heading"> Driving growth and innovation</h1>
+        <h1 className="primary-heading"> Why Choose Woaom Procurement Plathform</h1>
         <p className="primary-text">
         Explore how Salford & CO Engineering, Morgan Maxwell, and Happy Factory orchestrates and delivers supplies that go beyond industry bonds by intergating people, processes and systems in the cloud.
         </p>

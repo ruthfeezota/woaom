@@ -29,7 +29,7 @@ const Authentication = () => {
         {authenticatedUser === null ? (
           <>
             <Link to="/Login">
-              <button className="primary-button">Login</button>
+              <button className="primary-button-login">Login</button>
             </Link>
           </>
         ) : (

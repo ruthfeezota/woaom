@@ -20,7 +20,18 @@ import Recommended from "./components/Recommended/Recommended";
 import Sidebar from "./components/Sidebar/Sidebar";
 import Card from "./components/Card";
 import "./index.css";
-import BrandName from './pages/Factory/BrandName';
+// import BrandName from './pages/Factory/BrandName';
+import Acquisitions from './pages/Factory/Acquisitions/Acquisitions';
+import CimentsDe from './pages/Factory/CimentsDe/CimentsDe';
+import Justmoh from './pages/Factory/Justmoh/Justmoh';
+import ContinentalBlue from './pages/Factory/ContinentalBlue/ContinentalBlue';
+import CityPaints from './pages/Factory/CityPaints/CityPaints';
+import SethiBrothers from './pages/Factory/SethiBrothers/SethiBrothers';
+import CasaTrasacco from './pages/Factory/CasaTrasacco/CasaTrasacco';
+import AsuogyamanCompany from './pages/Factory/AsuogyamanCompany/AsuogyamanCompany';
+import SofaamyCompany from './pages/Factory/SofaamyCompany/SofaamyCompany';
+import YehansInternational from './pages/Factory/YehansInternational/YehansInternational ';
+
 
 
 
@@ -154,14 +165,54 @@ function App() {
           <Route path='/searchpage'>
             <SearchPage/>
           </Route>
-
-
-          <Route path='/brandname'>
-            <BrandName/>
-          </Route>
-
           <Route path='/chat'>
             <ChatRoom/>
+          </Route>
+
+
+{/* Factory Pages */}
+          <Route path='/Acquisitions'>
+           <Acquisitions/>
+          </Route>
+
+          {/* <Route path='/brandname'>
+            <BrandName/>
+          </Route> */}
+
+          <Route path='/CimentsDe'>
+           <CimentsDe/>
+          </Route>
+
+          <Route path='/Justmoh'>
+           <Justmoh/>
+          </Route>
+
+          <Route path='/ContinentalBlue'>
+           <ContinentalBlue/>
+          </Route>
+
+          <Route path='/CityPaints'>
+           <CityPaints/>
+          </Route>
+
+          <Route path='/SethiBrothers'>
+           <SethiBrothers/>
+          </Route>
+
+          <Route path='/CasaTrasacco'>
+           <CasaTrasacco/>
+          </Route>
+
+          <Route path='/AsuogyamanCompany'>
+           <AsuogyamanCompany/>
+          </Route>
+
+          <Route path='/SofaamyCompany'>
+           <SofaamyCompany/>
+          </Route>
+
+          <Route path='/YehansInternational'>
+           <YehansInternational/>
           </Route>
 
 
@@ -169,12 +220,11 @@ function App() {
           <Route path='/'>
             <Navbar />
             <Home /> 
+            <Work/>
             <AboutUsBanner/>
             <Work/>
             <Footer/>
           </Route>
-          
-
 
 
         </Switch>

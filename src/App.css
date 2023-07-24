@@ -135,7 +135,18 @@ nav {
 }
 .primary-button {
   padding: 0.9rem 1.75rem;
-  background-color: white;
+  background-color: #fe9e0d;
+  outline: none;
+  border: none;
+  border-radius: 5rem;
+  font-size: 1.1rem;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.2s;
+}
+.primary-button-login {
+  padding: 0.5rem 1.5rem;
+  background-color: #fe9e0d;
   outline: none;
   border: none;
   border-radius: 5rem;
