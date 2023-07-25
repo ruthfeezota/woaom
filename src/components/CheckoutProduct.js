@@ -1,45 +1,36 @@
 import React from 'react'
-import './CheckoutProduct.css';
-import { useStateValue } from '../StateProvider';
-
-function CheckoutProduct({id, title, price,image, rating }) {
+import './CheckoutProduct.css'
+import { useStateValue } from './StateProvider'
+const CheckOutProduct = (props) => {
     const [{ basket }, dispatch] = useStateValue();
-
-    console.log(id, title, price,image, rating);
-
-    const removeFromBasket = () => {
-        // remove item from basket
-       dispatch({
-           type: "REMOVE_FROM_BASKET",
-           id: id
-       });
-    };
-
+    const removeFromCart = () => {
+        dispatch({
+            type: "REMOVE_FROM_BASKET",
+            id: props.id,
+        })
+    }
     return (
         <div className="checkoutProduct">
-            <img className="checkoutProduct__image" src={image} alt="" />
-
+            <img className="checkoutProduct__image" src={props.image}/>
             <div className="checkoutProduct__info">
-                <p className="checkoutProduct__title">{title}</p>
-
+                <p className="checkoutProduct__title">{props.title}</p>
                 <p className="checkoutProduct__price">
-                    <strong>AR$</strong>
-                    <strong>{price}</strong>   
-                </p>    
-
+                    <small>$</small>
+                    <strong>{props.price}</strong>
+                </p>
                 <div className="checkoutProduct__rating">
-                    {Array(rating)
+                {
+                    Array(props.rating)
                     .fill()
-                    .map((_, i) => (
-                        <p>⭐</p>
-                    ))}
+                    .map(() => (
+                          <p>⭐️</p>  
+                    ))
+                }
                 </div>
-
-                <button onClick={removeFromBasket}>Eliminar item</button>
-            </div> 
-        </div>    
-
-    );
+                <button onClick={removeFromCart}>Remove from cart</button>
+            </div>
+        </div>
+    )
 }
 
-export default CheckoutProduct
+export default CheckOutProduct

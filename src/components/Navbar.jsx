@@ -1,5 +1,5 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
-import React, { useState, useContext } from "react";
+import React, { useState } from "react";
 import Logo from "../Assets/Logo.png";
 import "./Navbar.css";
 import { HiOutlineBars3 } from "react-icons/hi2";
@@ -16,11 +16,17 @@ import InfoIcon from "@mui/icons-material/Info";
 import CommentRoundedIcon from "@mui/icons-material/CommentRounded";
 import PhoneRoundedIcon from "@mui/icons-material/PhoneRounded";
 import Authentication from "./Authentication";
+import { ShoppingCart } from "phosphor-react";
+
+
 
 
 
 const Navbar = () => {
   const [openMenu, setOpenMenu] = useState(false);
+  
+
+
 
   const menuOptions = [
     {
@@ -54,9 +60,10 @@ const Navbar = () => {
         <a href="/">Manufacturers</a>
         <a href="/">How It Works</a>
         <a href="/">Contact</a>
-        <a href="/">
-          {/* <BsCart2 className="navbar-cart-icon" /> */}
+        <a href="/cart">
+          <ShoppingCart size={32}/>
         </a>
+
         <Authentication />
 
       </div>
@@ -83,6 +90,7 @@ const Navbar = () => {
           <Divider />
         </Box>
       </Drawer>
+      
     </nav>
   );
 };

@@ -2,23 +2,24 @@ import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
 import App from "./App";
-import reducer, { initialState } from "./reducer";
+import reducer, { initialState } from './reducer';
 import { StateProvider } from "./StateProvider";
 import * as serviceWorker from './serviceWorker';
 import AuthContextProvider from './context/AuthContext';
+
+
 
  
 ReactDOM.render(
   <React.StrictMode>
      <AuthContextProvider>
-   
-    <StateProvider initialState={initialState} reducer={reducer} >
+     <StateProvider initialState={initialState} reducer={reducer}>
       <App />
-      
     </StateProvider>  
     </AuthContextProvider>
-
+    
   </React.StrictMode>,
+ 
   document.getElementById('root')
 );
 

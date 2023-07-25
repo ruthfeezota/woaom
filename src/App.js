@@ -31,8 +31,12 @@ import CasaTrasacco from './pages/Factory/CasaTrasacco/CasaTrasacco';
 import AsuogyamanCompany from './pages/Factory/AsuogyamanCompany/AsuogyamanCompany';
 import SofaamyCompany from './pages/Factory/SofaamyCompany/SofaamyCompany';
 import YehansInternational from './pages/Factory/YehansInternational/YehansInternational ';
+import CheckOut from './components/Checkout';
+import { ShopContextProvider } from "./context/shop-context";
 
-
+// Cart
+import { Cart } from '../src/pages/cart/cart'
+import { Shop } from '../src/pages/shop/shop'
 
 
 function App() {
@@ -96,54 +100,69 @@ function App() {
     );
   }
 
-
   const result = filteredData(products, selectedCategory, query);
 
-  
-
-  /* useEffect <<<<<<< POWERFUL */
-  /* Piece of code which runs based on a given condition */
 
   useEffect(() => {
-    const unsuscribe = auth.onAuthStateChanged((authUser) => {
-      if (authUser) {
-        /* the user is logged in..... */
-
+    const unsubscribe = auth.onAuthStateChanged((authUser) => {
+      if(authUser){
+        // user logged in
         dispatch({
-          type: 'SET_USER',
-          user: authUser,
-        });
-      } else {
-        /* the user is logged out.... */
+          type: "SET_USER",
+          user: authUser
+        })
+      }
+      else{
         dispatch({
-          type: 'SET_USER',
-          user: null,
+          type: "SET_USER",
+          user: null
         });
+        // user logged out
       }
     });
-
     return () => {
-      /* Any cleanup operations go in here.... */
-      unsuscribe();
-    };
-  }, []);
-
-  console.log('USER IS >>>> ', user);
+      unsubscribe();
+    }
+  }, [])
+  console.log("user is >>>", user)
   
 
 
   return (
+    <ShopContextProvider>
+
     <Router>
       <div className="app">
+      
+      
         <Switch>
 
           <Route path='/checkout'>
             <Navbar />
+            <CheckOut/>
+          </Route>
+
+          <Route path="/cart">
+            <Navbar />
+            <Cart/>
+          </Route>
+
+          <Route path="/shop">
+            <Navbar />
+            <Shop />
+           
+          </Route>
+
+          <Route path="/cart">
+            <Navbar />
+            <Cart/>
           </Route>
           
           <Route path='/login'>
             <Login />
           </Route>
+
+         
 
           <Route path='/products'>
             <Sidebar handleChange={handleChange}/>
@@ -226,10 +245,12 @@ function App() {
             <Footer/>
           </Route>
 
-
+         
         </Switch>
+        
       </div>
     </Router>
+    </ShopContextProvider>
   );
 }
 
