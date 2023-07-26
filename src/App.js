@@ -37,6 +37,7 @@ import { ShopContextProvider } from "./context/shop-context";
 // Cart
 import { Cart } from '../src/pages/cart/cart'
 import { Shop } from '../src/pages/shop/shop'
+import LogoBanner from './components/LogoBanner';
 
 
 function App() {
@@ -153,10 +154,7 @@ function App() {
            
           </Route>
 
-          <Route path="/cart">
-            <Navbar />
-            <Cart/>
-          </Route>
+  
           
           <Route path='/login'>
             <Login />
@@ -239,9 +237,9 @@ function App() {
           <Route path='/'>
             <Navbar />
             <Home /> 
+          <LogoBanner/>
             <Work/>
             <AboutUsBanner/>
-            <Work/>
             <Footer/>
           </Route>
 

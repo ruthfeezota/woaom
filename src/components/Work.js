@@ -1,7 +1,8 @@
 import React from "react";
-import PickMeals from "../Assets/about-background-image-4.png";
-import ChooseMeals from "../Assets/choose-image.png";
-import Contracts from "../Assets/supplier-discovery-image.png"
+import PickMeals from "../Assets/5.png";
+import ChooseMeals from "../Assets/6.png";
+import Contracts from "../Assets/7.png"
+
 import './Work.css'
 
 
@@ -10,33 +11,33 @@ const Work = () => {
   const workInfoData = [
     {
       image: PickMeals,
-      title: "Salford & CO Engineering",
-      text: "Tell us your requirements, hit search and explore a list of new suppliers in just a few minutes",
+      title: "",
+      text: "Identify opportunities, manage savings, make purchases and payments, all through a unified procurement platform",
     },
     {
       image: ChooseMeals,
-      title: "Morgan Maxwell",
-      text: "Actionable and informative insights on your RFx processes - enabling you yo make informed decisions",
+      title: "",
+      text: "Boost adoption and drive enterprise-wide compliance with intelligent, intuitive interfaces and user-centric design",
     },
     {
       image: Contracts,
-      title: "Happy Factory Candy & Cotton Candies",
-      text: "Create contracts from your awarded RFPs and experience efficient and auditable source to contract processes",
-    },
+      title: "",
+      text: "Manage all source-to-pay processes on the go with a mobile-native design – anytime, anywhere, any device",
+    }
 
   ];
   return (
     <div className="work-section-wrapper-work" id="work">
       <div className="work-section-top">
-        <h1 className="primary-heading"> Why Choose Woaom Procurement Plathform</h1>
+        <h1 className="primary-heading-1"> Woaom is an all-in-one Procurement Management Solution</h1>
         <p className="primary-text">
-        Explore how Salford & CO Engineering, Morgan Maxwell, and Happy Factory orchestrates and delivers supplies that go beyond industry bonds by intergating people, processes and systems in the cloud.
+        Everything you need to streamline your purchasing process to gain spend visibility, improve efficiencies, and cut costs. Let Tradogram unlocks reliable spend data so you can focus on what matters.
         </p>
       </div>
-      <div className="work-section-bottom">
+      <div className="work-section-bottom-1">
         {workInfoData.map((data) => (
-          <div className="work-section-info" key={data.title}>
-            <div className="info-boxes-img-container">
+          <div className="work-section-info-1" key={data.title}>
+            <div className="info-boxes-img-container-1">
               <img src={data.image} alt="" />
             </div>
             <h3>{data.title}</h3>

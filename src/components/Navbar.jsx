@@ -57,16 +57,17 @@ const Navbar = () => {
       </div>
       <div className="navbar-links-container">
         <a href="/">AfCFTA</a>
-        <a href="/">Manufacturers</a>
-        <a href="/">How It Works</a>
-        <a href="/">Contact</a>
-        <a href="/cart">
-          <ShoppingCart size={32}/>
+        <a href="/">MANUFACTURERS</a>
+        <a href="/">HOW IT WORKS</a>
+        <a href="/">CONTACT</a>
+        </div>
+        <div>        
+          <a href="/cart" classname="navbar-links-container">
+          <ShoppingCart size={25}/>
         </a>
-
+        </div>
         <Authentication />
-
-      </div>
+     
       <div className="navbar-menu-container">
         <HiOutlineBars3 onClick={() => setOpenMenu(true)} />
       </div>

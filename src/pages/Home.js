@@ -12,17 +12,11 @@ function Home() {
                  transitionTime="5000" showThumbs={false} showStatus={false} >
       <div>
         <img src="https://i.ibb.co/3C2Shvs/home-Page-Cover-1.png" alt="phot"/>
-        <h1 className="primary-heading-banner">Power your Procurement Process with Woaom</h1>
+        <h3 className="primary-heading-banner">A BETTER WAY FOR PROCUREMENT MANAGEMENT</h3>
         <button className="outline-home-button-banner">
-                USERS
-              </button>
-              <button className="outline-home-button-banner-2">
-                MANUFACTURER
+        GET A FREE ACCOUNT
               </button>
 
-              <div>
-                <h4>Driving business growth around Africa and the world</h4>
-              </div>
       </div>
    
       {/* <div>

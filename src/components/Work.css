@@ -87,11 +87,11 @@ nav {
   justify-content: center;
   align-items: flex-start;
 }
-.primary-heading {
-  font-size: clamp(2rem, 3vw, 3rem);
+.primary-heading-1 {
+  font-size: 40px;
   color: #ffffff;
   /* line-height: 5rem; */
-  max-width: 600px;
+  max-width: 300px;
 }
 .primary-text {
   font-size: clamp(1rem, 3vw, 1.3rem);
@@ -113,6 +113,14 @@ nav {
   align-items: center;
   justify-content: center;
 
+}
+.info-boxes-img-container-1 {
+  height: 150px;
+  width: 150px;
+  max-height: 150px;
+  max-width: 150px;
+  margin-top: 10px;
+  
 }
 
 .third-button {
@@ -318,9 +326,10 @@ nav {
   align-items: center;
   flex-direction: column;
 }
-.work-section-info {
+.work-section-info-1 {
   width: 290px;
   min-height: 350px;
+  max-height: 350px;
   background-color: white;
   padding: 1rem 2rem;
   display: flex;
@@ -330,20 +339,31 @@ nav {
   text-align: center;
   border-radius: 1rem;
   margin: 1rem 2rem;
+  color: black;
  
 }
 .work-section-info h3 {
-  margin: 1rem 0rem;
+  margin: 0.5rem 0rem;
 }
 .work-section-bottom {
-  margin-top: 5rem;
+  margin-top: 1rem;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  
-  
+
+
 }
+
+.work-section-bottom-1 {
+  margin-top: 10px;
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
 .work-section-info p {
   flex: 1;
   display: flex;

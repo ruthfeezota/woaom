@@ -1,0 +1,59 @@
+#scroll-container {
+
+    background-color: white;
+    height: 120px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;  /* Center Vertically */
+    justify-content: center;  /* Center Horizontally */
+    column-gap: 10px;  /* Set gap between images */
+    row-gap: 10px
+
+ 
+
+  }
+  
+  #scroll-img {
+    /* animation properties */
+    -moz-transform: translateX(100%);
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%);
+    
+    -moz-animation: my-animation 25s linear infinite;
+    -webkit-animation: my-animation 25s linear infinite;
+    animation: my-animation 25s linear infinite;
+    color: white;
+    width: 100px;
+    height: 100px;
+    padding: 20px;
+  
+    
+   
+
+
+  }
+  
+  /* for Firefox */
+  @-moz-keyframes my-animation {
+    from { -moz-transform: translateX(100%); }
+    to { -moz-transform: translateX(-100%); }
+  }
+  
+  /* for Chrome */
+  @-webkit-keyframes my-animation {
+    from { -webkit-transform: translateX(100%); }
+    to { -webkit-transform: translateX(-100%); }
+  }
+  
+  @keyframes my-animation {
+    from {
+      -moz-transform: translateX(100%);
+      -webkit-transform: translateX(100%);
+      transform: translateX(100%);
+    }
+    to {
+      -moz-transform: translateX(-100%);
+      -webkit-transform: translateX(-100%);
+      transform: translateX(-100%);
+    }
+}
