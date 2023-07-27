@@ -41,6 +41,7 @@ import LogoBanner from './components/LogoBanner';
 import Chatbot from './pages/Factory/Chatbot';
 
 
+
 function App() {
   const [{ user }, dispatch] = useStateValue();
   const [selectedCategory, setSelectedCategory] = useState(null);
@@ -227,6 +228,10 @@ function App() {
 
           <Route path='/YehansInternational'>
            <YehansInternational/>
+          </Route>
+
+          <Route path='/shop'>
+         <Shop/>
           </Route>
 
 

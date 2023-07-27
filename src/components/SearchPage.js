@@ -16,7 +16,7 @@ function SearchPage() {
             <input id="searchInput" type="text" placeholder="Search by name or location..." onChange={(event) => {
               setSearchTerm(event.target.value);
             }} />
-            <a href="/products">
+            <a href="/shop">
             <button className="forth-button">Search By Products</button>
             </a>
           </div>
