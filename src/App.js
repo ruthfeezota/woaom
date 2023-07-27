@@ -241,6 +241,7 @@ function App() {
             <Home /> 
           <LogoBanner/>
             <Work/>
+            <Shop/>
             <AboutUsBanner/>
             <Chatbot/>
             <Footer/>

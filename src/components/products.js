@@ -8,13 +8,13 @@ import product6 from "../Assets/Img/6.jpg";
 export const PRODUCTS = [
   {
     id: 1,
-    productName: "Fully powered electric walkie stacker HE1200/3, 118” Lift, 2600 Lb capacity, SolidHub",
+    productName: "Fully powered electric walkie stacker HE1200/3, 118”, 2600 Lb capacity",
     price: 1999.0,
     productImage: product1,
   },
   {
     id: 2,
-    productName: "2 ton Wheel Loader China Wheel Loader Mini Hydraulic Pump Front End Wheel Loaders",
+    productName: "2ton Wheel Loader  Mini Hydraulic Pump Front End Wheel Loaders",
     price: 1999.0,
     productImage: product2,
   },
@@ -26,13 +26,13 @@ export const PRODUCTS = [
   },
   {
     id: 4,
-    productName: "4 5 6 8 Inch static Trolley Rubber oil proof caster wheel Industrial Swivel brake Casters Wheels",
+    productName: "4'5'6'8 Inch static Trolley Rubber oil proof Swivel brake Casters Wheels",
     price: 28.0,
     productImage: product4,
   },
   {
     id: 5,
-    productName: "450x86x56 Chassis crawler construction machinery parts conversion system mini excavator rubber tracks for mini tractor",
+    productName: "450x86x56 Chassis crawler machinery parts rubber tracks",
     price: 179.99,
     productImage: product5,
   },

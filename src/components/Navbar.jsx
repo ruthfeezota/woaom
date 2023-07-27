@@ -20,8 +20,6 @@ import { ShoppingCart } from "phosphor-react";
 
 
 
-
-
 const Navbar = () => {
   const [openMenu, setOpenMenu] = useState(false);
   
@@ -61,11 +59,11 @@ const Navbar = () => {
         <a href="/">HOW IT WORKS</a>
         <a href="/">CONTACT</a>
         </div>
-        <div>        
+             
           <a href="/cart" classname="navbar-links-container">
           <ShoppingCart size={25}/>
         </a>
-        </div>
+        
         <Authentication />
      
       <div className="navbar-menu-container">
