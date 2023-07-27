@@ -10,7 +10,7 @@ function SearchPage() {
     return (
       <>
       <Navbar />
-      <a href="/brandname">
+      
         <div className="searchContainer">
           <div className="searchInput_Container">
             <input id="searchInput" type="text" placeholder="Search by name or location..." onChange={(event) => {
@@ -35,18 +35,25 @@ function SearchPage() {
 
                 .map((val) => {
                   return(
-                    <div className="template" key={val.id}>
-                        <img src={val.image} alt="" /> 
+                    <div className="template" id="template" key={val.id}>
+                        {/* <img src={val.image} alt="" />  */}
                         <h3>{val.title}</h3>
-                        <p className="description">We're committed to offering you the most convenient ways to connect with African Logistics.</p>
-                        <ul className="location" >
-                        <li>{val.location}</li>
 
-                        </ul>
-                        <ul className="location" >
+                        {/* <ul className="location" >
                         <li>{val.industry}</li>
-                        </ul>
+                        </ul> */}
+                        <div id="template" >
+                      <h3>{val.location}</h3>
+                        </div>
+                        <div id="template" >
+                          <h3>{val.revenue} - 2022 Revenue</h3>
+                        </div>
+                        <a href="{val.link}">
+                          <h4>{val.link} </h4>
+                        </a>
+                        
                     </div>
+           
 
                   )
                 })
@@ -54,7 +61,6 @@ function SearchPage() {
           </div>
           <Footer/>
         </div>
-        </a>
       </>
     )
   }

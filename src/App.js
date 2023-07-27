@@ -31,7 +31,7 @@ import CasaTrasacco from './pages/Factory/CasaTrasacco/CasaTrasacco';
 import AsuogyamanCompany from './pages/Factory/AsuogyamanCompany/AsuogyamanCompany';
 import SofaamyCompany from './pages/Factory/SofaamyCompany/SofaamyCompany';
 import YehansInternational from './pages/Factory/YehansInternational/YehansInternational ';
-import CheckOut from './components/Checkout';
+
 import { ShopContextProvider } from "./context/shop-context";
 
 // Cart
@@ -138,10 +138,6 @@ function App() {
       
         <Switch>
 
-          <Route path='/checkout'>
-            <Navbar />
-            <CheckOut/>
-          </Route>
 
           <Route path="/cart">
             <Navbar />

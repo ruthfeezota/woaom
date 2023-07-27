@@ -9,6 +9,7 @@
   #root,
   .app,
 
+
   .content {
     height: 100%;
     width: 100%;
@@ -22,6 +23,8 @@
   .app {
 
     position: relative;
+    
+  
   }
 
   /* Track */
@@ -42,6 +45,7 @@
 
 * {
   margin: 0;
+  color: white;
 }
 
 body {
@@ -52,17 +56,11 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
-}
-
-.content {
-  height: 100%;
-  width: 100%;
-  font-family: 'Bebas Neue', sans-serif;
-  background-color: black;
-  color: white;
+    
 }
