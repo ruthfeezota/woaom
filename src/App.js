@@ -38,6 +38,7 @@ import { ShopContextProvider } from "./context/shop-context";
 import { Cart } from '../src/pages/cart/cart'
 import { Shop } from '../src/pages/shop/shop'
 import LogoBanner from './components/LogoBanner';
+import Chatbot from './pages/Factory/Chatbot';
 
 
 function App() {
@@ -236,6 +237,7 @@ function App() {
           <LogoBanner/>
             <Work/>
             <AboutUsBanner/>
+            <Chatbot/>
             <Footer/>
           </Route>
 

@@ -8,7 +8,7 @@ function Acquisitions() {
     <div className="banner-main-container">
       <div className="factory-img-banner" >
       <h1 className="factory-title">{Factory && Factory[9].title}</h1>
-      <button className="outline-home-button-banner">View Products</button>
+      <button className="outline-home-button-banner-1">View Products</button>
       </div>
 
       <div className="factory-container">

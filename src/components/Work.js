@@ -2,7 +2,6 @@ import React from "react";
 import PickMeals from "../Assets/5.png";
 import ChooseMeals from "../Assets/6.png";
 import Contracts from "../Assets/7.png"
-
 import './Work.css'
 
 
@@ -29,7 +28,7 @@ const Work = () => {
   return (
     <div className="work-section-wrapper-work" id="work">
       <div className="work-section-top">
-        <h1 className="primary-heading-1"> Woaom is an all-in-one Procurement Management Solution</h1>
+        <h1 className="primary-heading"> Woaom is an all-in-one Procurement Management Solution</h1>
         <p className="primary-text">
         Everything you need to streamline your purchasing process to gain spend visibility, improve efficiencies, and cut costs. Let Tradogram unlocks reliable spend data so you can focus on what matters.
         </p>
@@ -41,7 +40,7 @@ const Work = () => {
               <img src={data.image} alt="" />
             </div>
             <h3>{data.title}</h3>
-            <p>{data.text}</p>
+            <p className="primary-text-black">{data.text}</p>
           </div>
           
         ))}
